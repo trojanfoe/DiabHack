@@ -1,0 +1,17 @@
+# Microsoft Developer Studio Generated Dependency File, included by diabhack.mak
+
+.\__vcpch.cpp : \
+	"..\..\..\mssdk\include\basetsd.h"\
+	"..\..\..\mssdk\include\propidl.h"\
+	"..\..\..\mssdk\include\winefs.h"\
+	".\diabhack.h"\
+	
+
+.\diabhack.rc : \
+	".\active.ico"\
+	".\diabhack.ico"\
+	".\error.ico"\
+	".\inactive.ico"\
+	".\toolbar.bmp"\
+	".\unknown.ico"\
+	

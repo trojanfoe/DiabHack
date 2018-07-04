@@ -1,0 +1,76 @@
+#**************************************************************************
+# Format:
+#
+# start <version> <description>
+# <offset> <olddata> <newdata>
+# .
+# .
+# end
+#
+# Note: <offset>, <olddata> and <newdata> must be specified in hex.
+#
+#       <olddata> and <newdata> must be the same length and a multiple
+#       of two (add leading zero if necessary).
+#
+#       Comment lines are those beginning with '#' or ';'.
+#**************************************************************************
+
+start V1.02 Townkill
+43cc7a 75 eb
+end
+
+start V1.02 Invulnerable From Monsters
+45de9b 75 eb
+45dfae 75 eb
+405cbc 75 eb
+end
+
+start V1.02 Invulnerable From Players
+40f1e4 2908 9090
+40f1f8 2984 eb05
+45dea2 298c eb05
+45deae 298c eb05
+45dfb5 298c eb05
+45dfc1 298c eb05
+end
+
+start V1.02 Get All Spells
+419412 01 00
+end
+
+start V1.02 Spells To Level 127
+431664 01 7f
+43c747 0f 00
+43c74c 0f 7f
+end
+
+; This hack requires you to remove something you're wearing and
+; then put it back on again...
+start V1.02 Spells To Level 254 (needs "Spells to Level 127" first)
+42c26b 8a4db0 b17f90
+end
+
+start V1.02 Unlimited Belt Items
+4175bb ffffffff 00000000
+end
+
+start V1.02 Unlimited Gold
+43c660 8d8410cc010000390874028908 c78402cc010000ffffff7f9090
+end
+
+start V1.02 Staff Charge Freeze
+418c28 48 90
+end
+
+; Untested
+
+start V1.02 Invisiblity (dangerous version)
+4278e1 f204 7900
+end
+
+start V1.02 Invisibilty (untested)
+417029 ffffffff 0b000000
+end
+
+
+

@@ -1,0 +1,79 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: diabhack - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\TEMP\RSP3A.tmp" with contents
+[
+/nologo /G5 /ML /W3 /GX /O1 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp".\Release/diabhack.pch" /Yu"diabhack.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\Data\Projects\diabhack\data.cpp"
+"E:\Data\Projects\diabhack\datfile.cpp"
+"E:\Data\Projects\diabhack\debug.cpp"
+"E:\Data\Projects\diabhack\dialog.cpp"
+"E:\Data\Projects\diabhack\hack.cpp"
+"E:\Data\Projects\diabhack\hacklist.cpp"
+"E:\Data\Projects\diabhack\hacknode.cpp"
+"E:\Data\Projects\diabhack\listview.cpp"
+"E:\Data\Projects\diabhack\main.cpp"
+"E:\Data\Projects\diabhack\proc.cpp"
+"E:\Data\Projects\diabhack\registry.cpp"
+"E:\Data\Projects\diabhack\toolbar.cpp"
+"E:\Data\Projects\diabhack\utils.cpp"
+]
+Creating command line "cl.exe @E:\TEMP\RSP3A.tmp" 
+Creating temporary file "E:\TEMP\RSP3B.tmp" with contents
+[
+/nologo /G5 /ML /W3 /GX /O1 /Ob2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /Fp".\Release/diabhack.pch" /Yc"diabhack.h" /Fo".\Release/" /Fd".\Release/" /FD /c 
+"E:\Data\Projects\diabhack\__vcpch.cpp"
+]
+Creating command line "cl.exe @E:\TEMP\RSP3B.tmp" 
+Creating temporary file "E:\TEMP\RSP3C.tmp" with contents
+[
+comctl32.lib version.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /version:1.0 /subsystem:windows /incremental:no /pdb:".\Release/diabhack.pdb" /machine:I386 /out:".\Release/diabhack.exe" 
+.\Release\__vcpch.obj
+.\Release\data.obj
+.\Release\datfile.obj
+.\Release\debug.obj
+.\Release\dialog.obj
+.\Release\hack.obj
+.\Release\hacklist.obj
+.\Release\hacknode.obj
+.\Release\listview.obj
+.\Release\main.obj
+.\Release\proc.obj
+.\Release\registry.obj
+.\Release\toolbar.obj
+.\Release\utils.obj
+.\Release\diabhack.res
+]
+Creating command line "link.exe @E:\TEMP\RSP3C.tmp"
+<h3>Output Window</h3>
+Compiling...
+__vcpch.cpp
+Compiling...
+data.cpp
+datfile.cpp
+debug.cpp
+dialog.cpp
+hack.cpp
+hacklist.cpp
+hacknode.cpp
+listview.cpp
+main.cpp
+proc.cpp
+registry.cpp
+toolbar.cpp
+utils.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+diabhack.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

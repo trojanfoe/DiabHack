@@ -1,0 +1,323 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open Data File...",          IDM_FILE_OPENDAT
+        MENUITEM "&Save Data File...",          IDM_FILE_SAVEDAT
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       IDM_FILE_EXIT
+    END
+    POPUP "Hac&k"
+    BEGIN
+        MENUITEM "Acti&vate",                   IDM_HACK_ACTIVATE
+        MENUITEM "&Activate All",               IDM_HACK_ACTIVATEALL
+        MENUITEM "Deac&tivate",                 IDM_HACK_DEACTIVATE
+        MENUITEM "&Deactivate All",             IDM_HACK_DEACTIVATEALL
+        MENUITEM SEPARATOR
+        MENUITEM "&Refresh Status",             IDM_HACK_REFRESHSTATUS
+        MENUITEM "Re&move",                     IDM_HACK_REMOVE
+        MENUITEM "Remo&ve All",                 IDM_HACK_REMOVEALL
+    END
+    POPUP "&Utility"
+    BEGIN
+        MENUITEM "&Read Diablo Memory...",      IDM_UTILITY_READDIABLOMEMORY
+        MENUITEM "&Write Diablo Memory...",     IDM_UTILITY_WRITEDIABLOMEMORY
+
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "How To Create .&DAT Files...", IDM_HELP_HOWCREATEDAT
+        MENUITEM "How To Convert Or Enter &SoftICE Codes...", 
+                                                IDM_HELP_HOWSOFTICECODES
+        MENUITEM SEPARATOR
+        MENUITEM "&About DiabHack...",          IDM_HELP_ABOUT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,3,12
+ PRODUCTVERSION 1,0,3,12
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080904b0"
+        BEGIN
+            VALUE "Comments", "Applies hacks to the Diablo program running in memory\0"
+            VALUE "CompanyName", "Trojan Consulting Ltd.\0"
+            VALUE "Contact", "andy@trojanco.demon.co.uk\0"
+            VALUE "FileDescription", "Diablo Hacking Program\0"
+            VALUE "FileVersion", "1.03 (Build 12)\0"
+            VALUE "InternalName", "diabhack\0"
+            VALUE "LegalCopyright", "Copyright © 1997, 1999 Trojan Consulting Ltd.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DiabHack.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Trojan Consulting Ltd. DiabHack.exe\0"
+            VALUE "ProductVersion", "1.03 (Build 12)\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x809, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_DIABHACK            ICON    DISCARDABLE     "diabhack.ico"
+IDI_STATEUNKNOWN        ICON    DISCARDABLE     "unknown.ico"
+IDI_STATEACTIVE         ICON    DISCARDABLE     "active.ico"
+IDI_STATEINACTIVE       ICON    DISCARDABLE     "inactive.ico"
+IDI_STATEERROR          ICON    DISCARDABLE     "error.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 177, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About DiabHack"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDI_DIABHACK,IDC_STATIC,5,10,20,20
+    LTEXT           "Diablo Hacking Utility",IDC_STATIC,40,10,130,8
+    CTEXT           "Copyright ©1997 Trojan Consulting Ltd.\nAuthor: Andy Duplain\n<andy@trojanco.demon.co.uk>\nThe latest version of DiabHack is available from:\nhttp://www.trojanco.demon.co.uk/index.htm",
+                    IDC_STATIC,6,35,165,45,0,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "Yeah, so what",IDOK,54,85,70,14
+    LTEXT           "X",IDC_AB_VERSION,40,20,130,8
+END
+
+IDD_INFO DIALOG DISCARDABLE  0, 0, 342, 170
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,150,50,14
+    EDITTEXT        IDC_CDF_INFO,5,5,330,140,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+IDD_REMINDER DIALOG DISCARDABLE  0, 0, 186, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_STATEERROR,IDC_STATIC,5,5,20,20
+    LTEXT           "Y",IDC_REM_MSG,33,5,139,40
+    DEFPUSHBUTTON   "OK, go away now",IDOK,9,50,75,14
+    CONTROL         "and don't come &back",IDC_REM_DONTCOMEBACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,94,53,83,10
+END
+
+IDD_READWRITEDIABLOMEMORY DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Offset (Hex):",IDC_STATIC,5,5,40,8
+    EDITTEXT        IDC_RWDM_OFFSET,5,15,65,14,ES_AUTOHSCROLL
+    LTEXT           "&Length (Hex):",IDC_STATIC,85,5,44,8
+    EDITTEXT        IDC_RWDM_LEN,85,15,65,14,ES_AUTOHSCROLL
+    LTEXT           "&Data (Hex):",IDC_STATIC,5,35,37,8
+    EDITTEXT        IDC_RWDM_DATA,5,45,115,45,ES_MULTILINE | WS_VSCROLL
+    DEFPUSHBUTTON   "Y",IDC_RWDM_DOIT,130,45,50,14
+    PUSHBUTTON      "Close",IDCANCEL,130,70,50,14
+END
+
+IDD_YESNO DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_STATEUNKNOWN,IDC_STATIC,10,5,20,20
+    LTEXT           "Y",IDC_YESNO_MSG,40,5,126,40
+    DEFPUSHBUTTON   "Yes",IDYES,27,55,50,14
+    PUSHBUTTON      "No",IDNO,107,55,50,14
+    CONTROL         "&Don't bother me with this nonsense anymore",
+                    IDC_YESNO_DONTBOTHERAGAIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,17,75,155,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_REMINDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_READWRITEDIABLOMEMORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_YESNO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_TOOLBAR             BITMAP  DISCARDABLE     "toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_FILE_OPENDAT        "Open Data File"
+    IDM_FILE_EXIT           "Exit"
+    IDM_HACK_ACTIVATE       "Activate Selected Hacks"
+    IDM_HACK_ACTIVATEALL    "Activate All Hacks"
+    IDM_HACK_DEACTIVATE     "Deactivate Selected Hacks"
+    IDM_HACK_DEACTIVATEALL  "Deactivate All Hacks"
+    IDM_HELP_ABOUT          "About DiabHack"
+    IDM_HELP_HOWCREATEDAT   "How to create .DAT files"
+    IDM_HACK_REFRESHSTATUS  "Refresh Hack Status"
+    IDM_HACK_REMOVE         "Remove Selected Hacks"
+    IDM_HACK_REMOVEALL      "Remove All Hacks"
+    IDM_FILE_SAVEDAT        "Save Data File"
+    IDM_UTILITY_READDIABLOMEMORY "Read Diablo Memory"
+    IDM_UTILITY_WRITEDIABLOMEMORY "Write Diablo Memory"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_HELP_HOWSOFTICECODES "How To Convert Or Enter SoftICE Codes"
+    IDS_CAKE                """He's going the distance, he's going for speed, she's all alone, all alone, in her time of need"" [CAKE]"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

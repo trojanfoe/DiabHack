@@ -1,0 +1,45 @@
+#**************************************************************************
+# Format:
+#
+# start <version> <description>
+# <offset> <olddata> <newdata>
+# .
+# .
+# end
+#
+# Note: <offset>, <olddata> and <newdata> must be specified in hex.
+#
+#       <olddata> and <newdata> must be the same length and a multiple
+#       of two (add leading zero if necessary).
+#
+#       Comment lines are those beginning with '#' or ';'.
+#**************************************************************************
+
+;
+; TownKill doesn't work anymore! The other player's programs
+; check if a spell is being cast and display the message
+; "<Player> has cast an illegal spell"... good idea Blizzard!
+;
+;start V1.03 Townkill
+;41ccf8 75 eb
+;44ecb0 75 eb
+;450014 75 eb
+;4500da 75 eb
+;45b290 75 eb
+;45e233 75 eb
+;end
+
+start V1.03 Invulnerable From Monsters
+40f789 75 eb
+4451cb 75 eb
+4452de 75 eb
+end
+
+start V1.03 Invulnerable From Players (needs "Invulnerable from Monsters" active)
+450627 2910 9090
+45063a 2984 eb05
+end
+
+start V1.03 Unlimited Gold
+41c641 8d8410cc010000390874028908 c78402cc010000ffffff7f9090
+end

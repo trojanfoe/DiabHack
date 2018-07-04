@@ -1,0 +1,46 @@
+DiabHack Changes
+================
+
+1.00    26-Mar-97   Initial Release.
+
+1.01    27-Mar-97   Fixed major bug when saving .DAT files; data streams
+                    of greater than 1 byte were corrupt.
+
+                    Fixed bug when updating state of active hacks.
+
+                    Fixed bug when reporting already loaded hack when loading
+                    .DAT files.
+
+                    Made many .DAT file parse errors recoverable.
+
+                    Added ability to double-click on a hack in order to
+                    toggle between active and inactive states.
+
+                    Compiled using Visual C++ 5.0 .
+
+1.02    31-Mar-97
+                    Added Read/Write Diablo Memory commands.
+
+                    Added Cancel option to message boxes when an error occurs
+                    during memory I/O (If Diablo crashes DiabHack repeatedly
+                    reports an error).
+
+                    Added help on converting/entering SoftICE codes.
+
+                    Added ability to sort items in list view by click the header.
+
+                    Added reminder dialog box before writing to Diablo's memory.
+
+                    Added context menu upon pressing the right mouse button in
+                    the list view.
+
+                    Added ability to remove individual hacks.
+
+1.02    05-Sep-98
+                    Made an Installation program.
+
+                    Converted project to Visual C++ 6.0.  The VC5 project file
+                    is now called DiabHack.001.
+
+--
+Andy Duplain <andy@trojanco.demon.co.uk>

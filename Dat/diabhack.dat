@@ -1,0 +1,26 @@
+#**************************************************************************
+# Format:
+#
+# start <version> <description>
+# <offset> <olddata> <newdata>
+# .
+# .
+# end
+#
+# Note: <offset>, <olddata> and <newdata> must be specified in hex.
+#
+#       <olddata> and <newdata> must be the same length and a multiple
+#       of two (add leading zero if necessary).
+#
+#       Comment lines are those beginning with '#' or ';'.
+#**************************************************************************
+
+start V1.02 Townkill
+43cc7a 75 eb
+end
+
+start V1.02 Invulnerable from monsters
+45de9b 75 eb
+45dfae 75 eb
+405cbc 75 eb
+end
